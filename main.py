@@ -1,4 +1,4 @@
-from Figures2 import *
+from Figures import *
 import mysql.connector
 
 mydb = mysql.connector.connect(
