@@ -1,5 +1,5 @@
 import math
-from abc import ABC, abstractclassmethod, abstractmethod
+from abc import ABC
 import mysql.connector
 
 mydb = mysql.connector.connect(
