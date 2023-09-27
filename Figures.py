@@ -34,6 +34,10 @@ class Figures(ABC):
         mycursor.execute(sql, val)
         mydb.commit()
 
+    @abstractmethod
+    def write_parameters(self):
+        pass
+
 class Square(Figures):
     def __init__(self,a):
         super().__init__('square')
