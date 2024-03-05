@@ -2,7 +2,7 @@ from Figures import *
 import mysql.connector
 
 mydb = mysql.connector.connect(
-    host="localhost", user="root", password="Y1012Jqkhkp", database="adelh"
+    host="localhost", user="root", password="XXX", database="adelh"
 )
 mycursor = mydb.cursor()
 """
