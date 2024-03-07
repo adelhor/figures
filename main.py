@@ -22,6 +22,7 @@ while True:
         "What would you like to perform? \n If add press 1, \n if delete press 2, \n if show table with figures press 3, \n if show table with properties press 4, \n if exit press 5. \n"
     )
     user_option = int(user_option_text)
+    figure: Square | Triangle | Circle | Trapezoid | None = None
     if user_option == 1:
         shape = input("What is the shape? Square, circle, triangle or trapezoid? \n")
         if shape == "square":
@@ -47,6 +48,8 @@ while True:
             leg2 = float(input("Size of the second leg: \n"))
             h = float(input("Size of the height: \n"))
             figure = Trapezoid(base, base2, leg, leg2, h)
+        else:
+            print("Wrong type of figure")
 
     elif user_option == 2:
         figure_id = int(input("Which figure do want to delete. Input the ID \n"))
