@@ -3,11 +3,11 @@ from algorithm import *
 
 while True:
     user_option_text = input(
-        "What would you like to perform? "
-        "\n If add press 1, "
-        "\n if delete press 2, "
-        "\n if show table with figures press 3,"
-        "\n if exit press 4. \n"
+        "Make your choice: "
+        "\n Making calculation - press 1, "
+        "\n Deleting the chosen figure - press 2, "
+        "\n Checking the table with figures that calculated - press 3,"
+        "\n Leaving the program - press 4. \n"
     )
     user_option = int(user_option_text)
     user_figure: Square | Triangle | Circle | Trapezoid | None = None
@@ -58,9 +58,11 @@ while True:
         DbManipulation.removing_figure(chosen_figure)
 
     elif user_option == 3:
-        DbManipulation.showing_figures()
+        table_with_results = DbManipulation.showing_figures()
+        print(table_with_results)
 
     elif user_option == 4:
+        print("See you again!")
         break
 
     else:
