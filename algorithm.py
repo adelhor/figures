@@ -1,5 +1,4 @@
 import math
-from abc import ABC, abstractmethod
 import mysql.connector
 import sys
 from dotenv import load_dotenv
