@@ -19,7 +19,7 @@ Launch the application by executing the main.py script. Follow the interactive p
 python main.py
 ```
 
-##Key Components
+## Key Components
 algorithm.py: Houses the core logic for calculating properties of geometric figures. It includes methods for area, perimeter, and possibly volume computations, depending on the figure types handled.
 
 main.py: The entry point of the application, main.py manages user input and coordinates the calculation processes by leveraging the algorithm.py functionalities.
